@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New User sign up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body{
+                background: white url('joanna-kosinska-1_CMoFsPfso-unsplash.jpg') center/cover fixed;
+                padding-top: 50px;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                height: auto;
+            }
+            input[type=number]{
+                border: 2px snow red;
+                border-radius: 4px;
+                background-color: #F9E79F;
+                color: #1C2833;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            input[type=number]:focus {
+                background-color: lightblue;
+                border: 4px snow #B3B6B7;
+            }
+            input[type=password]{
+                border: 2px snow red;
+                border-radius: 4px;
+                background-color: #F9E79F;
+                color: #1C2833;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            input[type=number]:focus {
+                background-color: lightblue;
+                border: 4px snow #B3B6B7;
+            }
+
+            input[type="email"]{
+                border: 2px snow red;
+                border-radius: 4px;
+                background-color: #F9E79F;
+                color: #1C2833;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            input[type="email"]:focus {
+                background-color: lightblue;
+                border: 4px snow #B3B6B7;
+            }
+
+            input[type="text"]{
+                border: 2px solid red;
+                border-radius: 4px;
+                background-color: #F9E79F;
+                color: #1C2833;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            input[type="text"]:focus {
+                background-color: lightblue;
+                border: 4px snow #B3B6B7;
+            }
+
+
+            input[type="date"] {
+                border: 2px solid red;
+                border-radius: 4px;
+                background-color: #F9E79F;
+                color: #1C2833;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            input[type="date"]::-webkit-inner-spin-button {
+                display: none;
+            }
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                opacity: 0;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 200px;
+                border-radius:10px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                transition: transform 1s;
+            }
+
+            button:hover {
+                background-color: green;
+                transform: scale(1.5);
+                cursor: pointer;
+                opacity: 0.9;
+            }
+            
+            .reset {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 200px;
+                border-radius:10px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                transition: transform 1s;
+                position: absolute;
+                right: 550px;
+            }
+
+            /* Add a hover effect for buttons */
+            .reset:hover {
+                background-color: green;
+                transform: scale(1.5);
+                cursor: pointer;
+                opacity: 0.9;
+            }
+            
+            .back {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 200px;
+                border-radius:10px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                transition: transform 1s;
+                position: absolute;
+                left: 550px;
+            }
+
+            /* Add a hover effect for buttons */
+            .back:hover {
+                background-color: green;
+                transform: scale(1.5);
+                cursor: pointer;
+                opacity: 0.9;
+            }
+            
+            
+            .h2{
+                text-align: center;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1 align="center">REGISTRATION FORM</h1>
+        <form action="register_up" method="post">
+            <table align="center">
+                <tr>
+                    <td><input type="text" name="firstname" placeholder="FIRST NAME:"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="lastname" placeholder="LAST NAME:"></td>
+                </tr>
+                <tr><td>
+                        DATE OF BIRTH:<input type="date" name="bday" placeholder="DATE OF BIRTH:">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" name="enrollmentno" maxlength = "10" placeholder="ENROLLMENT NO:"></td>
+                </tr>
+                <tr>
+                    <td><input type="email" name="emailid" placeholder="EMAIL-ID:"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="password" placeholder="PASSWORD:"></td>
+                </tr>
+                <tr>
+                    <td>GENDER:
+                        <input type="radio" class="container" name="gender" value="male">Male
+                        <input type="radio" class="container" name="gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="address" placeholder="ADDRESS:"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="city" placeholder="CITY:"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="pincode" placeholder="PINCODE:"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="state" placeholder="STATE:"></td>
+                </tr>
+                <tr><td>
+                        TYPE:<input type="radio" class="container" name="type" value="student">STUDENT
+                        <input type="radio" class="container" name="type" value="faculty">FACULTY</td>
+                </tr><br>
+                <tr>
+                    <td>COURSE:
+                        <input type="radio" class="container" name="course" value="BE">BE
+                        <input type="radio" class="container" name="course" value="BBA">BBA
+                        <input type="radio" class="container" name="course" value="BSC">BSC
+                        <input type="radio" class="container" name="course" value="MBA">MBA
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <button>Submit</button>
+                    </td>
+                </tr>
+
+
+            </table>
+        </form>
+        <form action="register.html" method="post">
+            <button class="reset">Reset</button>
+        </form>
+        <form action="f_dashboard.jsp" method="post">
+            <button class="back">back</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>DELETE RECORD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body{
+                background: white url('dan-dimmock-sNwnjxm8eTY-unsplash.jpg') center/cover fixed;
+                padding-top: 50px;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            input[type="email"]{
+                border-radius: 4px;
+                background-color: #D7DBDD;
+                color: #566573;
+                width: 300px;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                transition: transform 1s;
+                border-radius:10px;
+                opacity: 0.8;
+
+            }
+            input[type="email"]:hover
+            {
+
+                transform: scale(1.8);
+                cursor: pointer;
+                opacity: 0.8;
+            }
+
+            h1 {
+                font-weight: bold;
+                background-color: #080806;
+                padding: 20px;
+                text-align: center;
+                opacity: 0.6;
+                color: #F4F6F7;
+            }
+
+            button {
+                background-color: #44403c;
+                color: #f5f4f0;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 200px;
+                border-radius:10px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                transition: transform 1s;
+                opacity: 0.8;
+                font-size: 14px;
+            }
+
+            /* Add a hover effect for buttons */
+            button:hover {
+                background-color: #44403c;
+                transform: scale(1.5);
+                cursor: pointer;
+                opacity: 0.9;
+            }
+        </style>
+    </head>
+    <body>
+        <div align="center">
+            <h1>Deletion of student/faculty</h1>
+            <form method="post" action="del_rec_up">
+                <input type="email" name="en" placeholder="E-Mail:" required>
+                <p><button>Delete</button></p>
+            </form>
+            <form action="f_dashboard.jsp" method="post">
+                <button>BACK</button>
+            </form>
+        </div>
+    </body>
+</html>
